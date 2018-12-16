@@ -1,7 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<head>
-		<title>EmotionalSNS</title>
+		<title>ネガポチェンジ</title>
 		<meta charset="utf-8" />
 		<!--<meta name="viewport" content="width=980px, initial-scale=1, minimum-scale=1.0" />-->
 		<meta name="viewport" content="maximum-scale=0.5" />
@@ -25,49 +29,14 @@
 
 				<!-- Main -->
 					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/fulls/01.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<a href="https://chikahotakayama.github.io/HaratoruLab/shake.html">
-								<img src="images/icons/ouen.jpg" alt="" width="30" height="30"/></a>
-
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<a href="http://kantandays.com/html-ahref/">応援</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<a href="http://kantandays.com/html-ahref/">応援</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<a href="http://kantandays.com/html-ahref/">応援</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<a href="http://kantandays.com/html-ahref/">応援</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-						</article>
+						<script>
+						for (var i = 0; i < 11; i++) {
+						src = document.write(
+						`<article class="thumb">
+						<a href="images/fulls/${i}.jpg" class="image"><img src="images/thumbs/${i}.jpg" alt="" /></a>
+						</article>`);
+						}
+						</script>
 					</div>
 
 				<!-- Footer -->
